@@ -119,6 +119,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../img/stories_background.png");
+    border-radius: 66px;
 }
 
 .story:hover {
