@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background-color: #FAFAFA;
 }
@@ -88,12 +92,20 @@ body {
     cursor: pointer;
 }
 
-.story {
-    margin: 0px 0px 0px 14px;
-    text-align: center;
+.stories > div {
+    width: 78px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.story div {
+.story {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,7 +116,7 @@ body {
     background-image: url("../img/stories_background.png");
 }
 
-.story div:hover {
+.story:hover {
     cursor: pointer;
 }
 
@@ -125,6 +137,10 @@ body {
 }
 
 .post img {
+    width: 100%;
+}
+
+.post video {
     width: 100%;
 }
 
@@ -233,6 +249,10 @@ a {
     margin: 23px 17px 24px 30px;
 }
 
+.profile img:hover {
+    cursor: pointer;
+}
+
 .miniprofile {
     display: flex;
     align-items: center;
@@ -290,8 +310,17 @@ a {
     color: #139EF2;
 }
 
+.suggestion ion-icon {
+    font-size: 12px;
+    color: #3897F0;
+}
+
 .miniprofile p {
     font-size: 12px;
+}
+
+.miniprofile img:hover {
+    cursor: pointer;
 }
 
 .useful {
@@ -366,7 +395,7 @@ a {
 
     .stories {
         border: none;
-        height: 100px;
+        height: 97px;
         background-color: #FAFAFA;
     }
 
