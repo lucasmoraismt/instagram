@@ -183,7 +183,6 @@ a {
 .post-bottom {
     background-color: #FFF;
     border: 1px solid #DBDBDB;
-    box-sizing: border-box;
     padding: 0px 10px 10px;
 }
 
@@ -215,7 +214,7 @@ a {
     font-family: Roboto;
     font-weight: 300;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 14px;
 }
 
 .post-bottom a {
@@ -224,7 +223,56 @@ a {
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
+    line-height: 14px;
+}
+
+.post-bottom .comments {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.comments span {
+    margin-left: 2px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.comments .mais {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
     line-height: 16px;
+    color: #8E8E8E;
+
+}
+
+.comment {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment ion-icon {
+    font-size: 14px;
+}
+
+.mais:hover {
+    cursor: pointer;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.input input[type="text"] {
+    width: 75%;
+    border: hidden;
 }
 
 .sidebar {
