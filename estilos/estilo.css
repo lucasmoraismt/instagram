@@ -92,6 +92,14 @@ body {
     cursor: pointer;
 }
 
+.stories a {
+    width: 78px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
 .stories > div {
     width: 78px;
     height: 86px;
@@ -99,10 +107,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin-left: 2px;
 }
 
 .story {
