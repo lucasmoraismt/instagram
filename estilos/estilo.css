@@ -276,13 +276,23 @@ a {
     border: hidden;
 }
 
+.fixsidebar {
+    --widthA: 100vw;
+    --widthB: calc(var(--widthA) - 614px);
+    --widthC: calc(var(--widthB) - 219px);
+    --widthD: calc(var(--widthC) / 2);
+    width: calc(293 + --widthD);
+    position: relative;
+}
+
 .sidebar {
     width: 293px;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 0px;
-    left: 614px;
+    top: 88px;
+    left: auto;
+    position: -webkit-sticky;
+    position: sticky;
 }
 
 .profile {
